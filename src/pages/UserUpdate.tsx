@@ -3,7 +3,6 @@ import { useUpdateUser } from "../hook/useUpdateUser";
 import { fetchAuthSession } from "@aws-amplify/auth";
 
 export default function UserUpdate() {
-  // Estado para mantener el usuario actualizado desde localStorage
   const [user, setUser] = useState(() => {
     return JSON.parse(localStorage.getItem("user") || "{}");
   });

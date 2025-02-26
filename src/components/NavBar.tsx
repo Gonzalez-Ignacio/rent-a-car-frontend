@@ -42,7 +42,7 @@ export default function NavBar() {
           <Link to="/" className="text-lg font-bold px-4">
             Home
           </Link>
-          <Link className="btn btn-ghost btn-sm rounded-btn" to="/document">
+          <Link className="btn btn-ghost btn-sm rounded-btn" to="/document-page">
             Document
           </Link>
           <Link className="btn btn-ghost btn-sm rounded-btn" to="/car">
@@ -79,7 +79,6 @@ export default function NavBar() {
                 </svg>
               </button>
 
-              {/* Menú desplegable */}
               {isOpen && (
                 <div
                   className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y rounded-md bg-cyan-900 ring-1 shadow-lg ring-black/5 focus:outline-none"
@@ -132,7 +131,6 @@ export default function NavBar() {
         </div>
       </div>
 
-      {/* Modal de eliminación de usuario */}
       {isDeleteModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-500/75">
           <div className="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full">

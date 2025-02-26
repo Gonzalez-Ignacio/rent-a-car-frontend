@@ -1,10 +1,10 @@
-import { FieldError, UseFormRegister } from "react-hook-form";
-import { IUserRegisterValidation } from "../validation/registerValidation";
+import { FieldError, FieldValues, Path, UseFormRegister } from "react-hook-form";
+// import { IUserRegisterValidation } from "../validation/registerValidation";
 
-export interface IInputFields {
-  id: keyof IUserRegisterValidation;
+export interface IInputFields<T extends FieldValues> {
+  id: Path<T>;
   label: string;
   type: string;
-  register: UseFormRegister<IUserRegisterValidation>;
+  register: UseFormRegister<T>;
   error?: FieldError;
 }
