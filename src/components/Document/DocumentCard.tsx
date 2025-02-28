@@ -1,5 +1,5 @@
 import { fetchAuthSession } from "@aws-amplify/auth";
-import { useDeleteDocument } from "../../hook/document/useDeleteDOcument";
+import { useDeleteDocument } from "../../hook/document/useDeleteDocument";
 import { IDocumentCardProps } from "../../interface/Document/documentsCardProps";
 
 export function DocumentCard({ document, fetchDocuments }: IDocumentCardProps) {
