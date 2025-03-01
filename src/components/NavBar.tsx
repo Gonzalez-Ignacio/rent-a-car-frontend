@@ -45,7 +45,7 @@ export default function NavBar() {
           <Link className="btn btn-ghost btn-sm rounded-btn" to="/document-page">
             Document
           </Link>
-          <Link className="btn btn-ghost btn-sm rounded-btn" to="/car">
+          <Link className="btn btn-ghost btn-sm rounded-btn" to="/car-page">
             Car
           </Link>
           <Link className="btn btn-ghost btn-sm rounded-btn" to="/picture">

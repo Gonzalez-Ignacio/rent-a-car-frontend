@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import CompleteRegisterForm from "./pages/CompleteRegisterForm";
 import UserUpdate from "./pages/UserUpdate";
 import DocumentPage from "./pages/DocumentPage";
+import CarPage from "./pages/CarPage";
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
           <Route path="/user-update" element={<UserUpdate />} />
           {/* Document */}
           <Route path="/document-page" element={<DocumentPage />} />
+          {/* Car */}
+          <Route path="/car-page" element={<CarPage />} />
 
       </Routes>
     </Router>
