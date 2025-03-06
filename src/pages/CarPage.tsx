@@ -43,7 +43,7 @@ export default function CarPage() {
         {showForm ? "Cancelar" : "Crear Auto"}
       </button>
 
-      {showForm && <CarForm />}
+      {showForm && <CarForm fetchCars={fetchCars} />}
       
       <div className="grid grid-cols-3 gap-4 mt-4">
         {cars.map((car) => (
